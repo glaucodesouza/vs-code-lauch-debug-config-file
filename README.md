@@ -14,7 +14,8 @@ config for DEBUG in VS Code
 *Inside `launch.json`, add a configuration for Node.js:*  
 
 `{  
-     "version": "0.2.0",  
+
+     "version": "0.2.0", 
      
      "configurations": [  
      
