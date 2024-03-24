@@ -13,21 +13,21 @@ config for DEBUG in VS Code
 
 *Inside `launch.json`, add a configuration for Node.js:*  
 
-`1. {  
-2.     "version": "0.2.0",  
-3.     "configurations": [  
-4.         {  
-5.             "type": "node",  
-6.             "request": "launch",  
-7.             "name": "Debug Node.js",  
-8.             "program": "${workspaceFolder}/your_script.js",  
-9.             "skipFiles": [  
-10.                 "<node_internals>/**"  
-11.             ],  
-12.         "runtimeArgs": ["--inspect"]  
-13.         }  
-14.     ]  
-15. }`  
+`{  
+     "version": "0.2.0",  
+     "configurations": [  
+         {  
+             "type": "node",  
+             "request": "launch",  
+             "name": "Debug Node.js",  
+             "program": "${workspaceFolder}/your_script.js",  
+             "skipFiles": [  
+                 "<node_internals>/**"  
+             ],  
+         "runtimeArgs": ["--inspect"]  
+         }  
+     ]  
+}`  
 
 **Note: Replace `"your_script.js"` with the name of your Node.js script.**  
 
