@@ -15,18 +15,31 @@ config for DEBUG in VS Code
 
 `{  
      "version": "0.2.0",  
+     
      "configurations": [  
+     
          {  
+         
              "type": "node",  
+             
              "request": "launch",  
+             
              "name": "Debug Node.js",  
+             
              "program": "${workspaceFolder}/your_script.js",  
+             
              "skipFiles": [  
+             
                  "<node_internals>/**"  
+                 
              ],  
+             
          "runtimeArgs": ["--inspect"]  
+         
          }  
+         
      ]  
+     
 }`  
 
 **Note: Replace `"your_script.js"` with the name of your Node.js script.**  
